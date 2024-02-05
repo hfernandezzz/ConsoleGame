@@ -48,21 +48,21 @@ for (let i = 0; i < preguntas.length; i++) {
 console.log("■■■■■■■■■■■■■■■■■■■■")
 
 if (acierto < 50) {
-    mostrarPuntuacion(color)
+    console.log("Puntuación total " + rojo(acierto))
+    console.log(" ")
     console.log(rojo(" ¯|_( ͡◉ ‿‿ ͡◉)_/¯"))
 } else if (acierto < 70) {
-    mostrarPuntuacion(color)
+    console.log("Puntuación total " + naranja(acierto))
+    console.log(" ")
     console.log(naranja(" ( ͡◉ ‿‿ ͡◉)👌"))
 } else if (acierto < 90) {
-    mostrarPuntuacion(color)
+    console.log("Puntuación total " + amarillo(acierto))
+    console.log(" ")
     console.log(amarillo(" ( ͡◉ ‿‿ ͡◉)✊ "))
 } else if (acierto <= 100) {
-    mostrarPuntuacion(color)
+    console.log("Puntuación total " + verde(acierto))
+    console.log(" ")
     console.log(verde(" 💪( ͡◉ ‿‿ ͡◉҂)"))
-}
-
-function mostrarPuntuacion(color) {
-    console.log("Puntuación total" + color(acierto) + "\n")
 }
 
 console.log("■■■■■■■■■■■■■■■■■■■■")
